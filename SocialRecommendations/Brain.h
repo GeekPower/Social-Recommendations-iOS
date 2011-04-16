@@ -10,7 +10,10 @@
 
 
 @interface Brain : NSObject {
-    
+    NSMutableArray *dateValues, *domainValues;
 }
+@property (nonatomic, retain) NSMutableArray *dateValues, *domainValues;
+
+-(void)initValues;
 
 @end

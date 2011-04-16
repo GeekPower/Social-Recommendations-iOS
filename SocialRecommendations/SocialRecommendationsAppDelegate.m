@@ -15,13 +15,29 @@
 
 @synthesize window=_window;
 
-@synthesize viewController=_viewController;
+@synthesize navigationController;
 
+
+/*
+- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+	
+    // Override point for customization after application launch
+	[window addSubview:navigationController.view];
+    [window makeKeyAndVisible];
+}
+
+
+
+- (void)dealloc {
+    [window release];
+	[navigationController release];
+    [super dealloc];
+}
+*/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -68,7 +84,6 @@
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
     [super dealloc];
 }
 

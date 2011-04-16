@@ -12,10 +12,14 @@
 
 @interface SocialRecommendationsAppDelegate : NSObject <UIApplicationDelegate> {
 
+    	UINavigationController *navigationController;
+        IBOutlet UIButton *filterButton;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet SocialRecommendationsViewController *viewController;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+
+
 
 @end

@@ -11,4 +11,21 @@
 
 @implementation Brain
 
+@synthesize domainValues, dateValues;
+
+-(void) initValues {
+    [domainValues initWithCapacity:4];
+    [domainValues addObject:@"All"];
+    [domainValues addObject:@"Tech"];
+    [domainValues addObject:@"Outdoor"];
+    [domainValues addObject:@"Connect"];
+    [domainValues addObject:@"Fun"];
+    [domainValues addObject:@"Stupid"];
+    [domainValues addObject:@"Other"];
+    [domainValues initWithCapacity:3];
+    [domainValues addObject:@"Popularity"];
+    [domainValues addObject:@"24 hours"];
+    [domainValues addObject:@"7 days"];
+}
+
 @end

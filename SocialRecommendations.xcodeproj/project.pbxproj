@@ -25,6 +25,7 @@
 		25271C521359B0E40032B86C /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C511359B0E40032B86C /* Brain.m */; };
 		25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C541359B0F00032B86C /* NSDataAdditions.m */; };
 		25271C581359B0F00032B86C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C561359B0F00032B86C /* TBXML.m */; };
+		25271C9D1359BDEA0032B86C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271C9C1359BDEA0032B86C /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		25271C541359B0F00032B86C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		25271C551359B0F00032B86C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		25271C561359B0F00032B86C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		25271C9C1359BDEA0032B86C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25271C9D1359BDEA0032B86C /* libz.dylib in Frameworks */,
 				25271BF51359A86F0032B86C /* UIKit.framework in Frameworks */,
 				25271BF71359A86F0032B86C /* Foundation.framework in Frameworks */,
 				25271BF91359A86F0032B86C /* CoreGraphics.framework in Frameworks */,
@@ -93,6 +96,7 @@
 		25271BE51359A86F0032B86C = {
 			isa = PBXGroup;
 			children = (
+				25271C9C1359BDEA0032B86C /* libz.dylib */,
 				25271BFA1359A86F0032B86C /* SocialRecommendations */,
 				25271C1A1359A8700032B86C /* SocialRecommendationsTests */,
 				25271BF31359A86F0032B86C /* Frameworks */,
@@ -125,10 +129,9 @@
 				25271C4D1359B0C60032B86C /* Brain */,
 				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
-				25271C061359A86F0032B86C /* MainWindow.xib */,
 				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
 				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
-				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+				25271C9E1359C4C00032B86C /* xibs */,
 				25271BFB1359A86F0032B86C /* Supporting Files */,
 			);
 			path = SocialRecommendations;
@@ -184,6 +187,15 @@
 				25271C561359B0F00032B86C /* TBXML.m */,
 			);
 			name = TBXML;
+			sourceTree = "<group>";
+		};
+		25271C9E1359C4C00032B86C /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				25271C061359A86F0032B86C /* MainWindow.xib */,
+				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +402,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -397,7 +411,9 @@
 				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
 				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,12 +422,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
 				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

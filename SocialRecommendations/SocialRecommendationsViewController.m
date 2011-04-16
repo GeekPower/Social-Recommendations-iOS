@@ -10,6 +10,20 @@
 
 @implementation SocialRecommendationsViewController
 
+@synthesize brain, datePicker, domainPicker;
+
+
+- (Brain *)brain
+{
+	if (!brain) {
+		brain = [[Brain alloc] init];
+	}
+	return brain;
+}
+
+
+
+
 - (void)dealloc
 {
     [super dealloc];
@@ -25,13 +39,17 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // init pickers with values
+    //domainPicker.dataSource = [[self brain] domainValues];
+    
+    
 }
-*/
+
 
 - (void)viewDidUnload
 {

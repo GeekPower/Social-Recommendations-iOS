@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Brain.h"
 
 @interface SocialRecommendationsViewController : UIViewController {
-    
+    Brain *brain;
+    IBOutlet UIPickerView *datePicker, *domainPicker;
+    NSMutableArray *array;
 }
+
+@property (nonatomic, retain) UIPickerView *datePicker, *domainPicker;
+@property (nonatomic, retain) Brain *brain;
 
 @end
