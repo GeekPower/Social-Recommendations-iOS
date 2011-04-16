@@ -39,20 +39,20 @@
 		25271BF41359A86F0032B86C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		25271BF61359A86F0032B86C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		25271BF81359A86F0032B86C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		25271BFC1359A86F0032B86C /* SocialRecommendations-Info.plist */ = {isa = PBXFileReference; path = "SocialRecommendations-Info.plist"; sourceTree = "<group>"; };
+		25271BFC1359A86F0032B86C /* SocialRecommendations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialRecommendations-Info.plist"; sourceTree = "<group>"; };
 		25271BFE1359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		25271C001359A86F0032B86C /* SocialRecommendations-Prefix.pch */ = {isa = PBXFileReference; path = "SocialRecommendations-Prefix.pch"; sourceTree = "<group>"; };
+		25271C001359A86F0032B86C /* SocialRecommendations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialRecommendations-Prefix.pch"; sourceTree = "<group>"; };
 		25271C011359A86F0032B86C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */ = {isa = PBXFileReference; path = SocialRecommendationsAppDelegate.h; sourceTree = "<group>"; };
+		25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsAppDelegate.h; sourceTree = "<group>"; };
 		25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsAppDelegate.m; sourceTree = "<group>"; };
 		25271C071359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */ = {isa = PBXFileReference; path = SocialRecommendationsViewController.h; sourceTree = "<group>"; };
+		25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsViewController.h; sourceTree = "<group>"; };
 		25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsViewController.m; sourceTree = "<group>"; };
 		25271C0D1359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SocialRecommendationsViewController.xib; sourceTree = "<group>"; };
 		25271C141359A8700032B86C /* SocialRecommendationsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialRecommendationsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25271C1C1359A8700032B86C /* SocialRecommendationsTests-Info.plist */ = {isa = PBXFileReference; path = "SocialRecommendationsTests-Info.plist"; sourceTree = "<group>"; };
+		25271C1C1359A8700032B86C /* SocialRecommendationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialRecommendationsTests-Info.plist"; sourceTree = "<group>"; };
 		25271C1E1359A8700032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */ = {isa = PBXFileReference; path = "SocialRecommendationsTests-Prefix.pch"; sourceTree = "<group>"; };
+		25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialRecommendationsTests-Prefix.pch"; sourceTree = "<group>"; };
 		25271C211359A8700032B86C /* SocialRecommendationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsTests.h; sourceTree = "<group>"; };
 		25271C231359A8700032B86C /* SocialRecommendationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,12 +356,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
 				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,11 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Luiza Cicone (C9MN9UWWVM)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
 				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D557426-1B39-48AF-A9C2-E9F6878BA941";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
