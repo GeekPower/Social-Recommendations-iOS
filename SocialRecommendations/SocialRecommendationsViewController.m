@@ -8,6 +8,7 @@
 
 #import "SocialRecommendationsViewController.h"
 #import "RecommendedItem.h"
+#import "CustomCell.h"
 
 @implementation SocialRecommendationsViewController
 
@@ -23,6 +24,10 @@
 	return brain;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 96;
+}
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -31,22 +36,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"CustomCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        
+        NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil];
+        
+        for (id currentObj in objects) {
+            if ([currentObj isKindOfClass:[UITableViewCell class]]) {
+                cell = (CustomCell *) currentObj;
+                break;
+            }
+        }
+        
     }
-    
-    // Configure the cell.
-    NSLog([NSString stringWithFormat:@"%d", [indexPath row]]);
-    NSString *colorString = [[self.recommendationTitles objectAtIndex: [indexPath row]] title];
-    
-    cell.textLabel.text = colorString;
-    
-    NSString *subtitle = [[self.recommendationTitles objectAtIndex: [indexPath row]] description];
-    
-    cell.detailTextLabel.text = subtitle;
+    cell.titleLabel.text = [[recommendationTitles objectAtIndex:indexPath.row] title];
+    cell.descriptionLabel.text = [[recommendationTitles objectAtIndex:indexPath.row] description];
     
     return cell;
 } 
@@ -77,7 +83,7 @@
     for (int i=0; i<5; i++) {
         RecommendedItem *anItem = [[RecommendedItem alloc] init];
         anItem.title = [NSString stringWithFormat: @"Activity %d", i+1];
-        anItem.description = @"some description for this activity";
+        anItem.description = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
         [recommendationTitles addObject:anItem];
         [anItem release];
 

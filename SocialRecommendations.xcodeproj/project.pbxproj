@@ -29,6 +29,8 @@
 		25271CEA1359DF870032B86C /* CustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CE81359DF860032B86C /* CustomPicker.m */; };
 		25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271CE91359DF860032B86C /* CustomPicker.xib */; };
 		25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CF51359E8EF0032B86C /* RecommendedItem.m */; };
+		25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CFE1359F0CA0032B86C /* CustomCell.m */; };
+		25271D011359F1600032B86C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271D001359F1600032B86C /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		25271CE91359DF860032B86C /* CustomPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
 		25271CF41359E8EE0032B86C /* RecommendedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedItem.h; sourceTree = "<group>"; };
 		25271CF51359E8EF0032B86C /* RecommendedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedItem.m; sourceTree = "<group>"; };
+		25271CFD1359F0C90032B86C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		25271CFE1359F0CA0032B86C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		25271D001359F1600032B86C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,9 @@
 		25271BE51359A86F0032B86C = {
 			isa = PBXGroup;
 			children = (
+				25271D001359F1600032B86C /* CustomCell.xib */,
+				25271CFD1359F0C90032B86C /* CustomCell.h */,
+				25271CFE1359F0CA0032B86C /* CustomCell.m */,
 				25271BFA1359A86F0032B86C /* SocialRecommendations */,
 				25271C1A1359A8700032B86C /* SocialRecommendationsTests */,
 				25271BF31359A86F0032B86C /* Frameworks */,
@@ -282,6 +290,7 @@
 				25271C081359A86F0032B86C /* MainWindow.xib in Resources */,
 				25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */,
 				25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */,
+				25271D011359F1600032B86C /* CustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +334,7 @@
 				25271C581359B0F00032B86C /* TBXML.m in Sources */,
 				25271CEA1359DF870032B86C /* CustomPicker.m in Sources */,
 				25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */,
+				25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
