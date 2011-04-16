@@ -22,6 +22,9 @@
 		25271C1F1359A8700032B86C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25271C1D1359A8700032B86C /* InfoPlist.strings */; };
 		25271C221359A8700032B86C /* SocialRecommendationsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 25271C211359A8700032B86C /* SocialRecommendationsTests.h */; };
 		25271C241359A8700032B86C /* SocialRecommendationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C231359A8700032B86C /* SocialRecommendationsTests.m */; };
+		25271C521359B0E40032B86C /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C511359B0E40032B86C /* Brain.m */; };
+		25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C541359B0F00032B86C /* NSDataAdditions.m */; };
+		25271C581359B0F00032B86C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C561359B0F00032B86C /* TBXML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialRecommendationsTests-Prefix.pch"; sourceTree = "<group>"; };
 		25271C211359A8700032B86C /* SocialRecommendationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsTests.h; sourceTree = "<group>"; };
 		25271C231359A8700032B86C /* SocialRecommendationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsTests.m; sourceTree = "<group>"; };
+		25271C501359B0E40032B86C /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		25271C511359B0E40032B86C /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
+		25271C531359B0F00032B86C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		25271C541359B0F00032B86C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		25271C551359B0F00032B86C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		25271C561359B0F00032B86C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,7 @@
 		25271BFA1359A86F0032B86C /* SocialRecommendations */ = {
 			isa = PBXGroup;
 			children = (
+				25271C4D1359B0C60032B86C /* Brain */,
 				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
 				25271C061359A86F0032B86C /* MainWindow.xib */,
@@ -153,6 +163,27 @@
 				25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25271C4D1359B0C60032B86C /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+				25271C4F1359B0D00032B86C /* TBXML */,
+				25271C501359B0E40032B86C /* Brain.h */,
+				25271C511359B0E40032B86C /* Brain.m */,
+			);
+			name = Brain;
+			sourceTree = "<group>";
+		};
+		25271C4F1359B0D00032B86C /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				25271C531359B0F00032B86C /* NSDataAdditions.h */,
+				25271C541359B0F00032B86C /* NSDataAdditions.m */,
+				25271C551359B0F00032B86C /* TBXML.h */,
+				25271C561359B0F00032B86C /* TBXML.m */,
+			);
+			name = TBXML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +294,9 @@
 				25271C021359A86F0032B86C /* main.m in Sources */,
 				25271C051359A86F0032B86C /* SocialRecommendationsAppDelegate.m in Sources */,
 				25271C0B1359A86F0032B86C /* SocialRecommendationsViewController.m in Sources */,
+				25271C521359B0E40032B86C /* Brain.m in Sources */,
+				25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */,
+				25271C581359B0F00032B86C /* TBXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +481,7 @@
 				25271C291359A8700032B86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25271C2A1359A8700032B86C /* Build configuration list for PBXNativeTarget "SocialRecommendationsTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +490,7 @@
 				25271C2C1359A8700032B86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
