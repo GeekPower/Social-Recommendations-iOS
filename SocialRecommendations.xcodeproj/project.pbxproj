@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25271BF51359A86F0032B86C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF41359A86F0032B86C /* UIKit.framework */; };
+		25271BF71359A86F0032B86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF61359A86F0032B86C /* Foundation.framework */; };
+		25271BF91359A86F0032B86C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF81359A86F0032B86C /* CoreGraphics.framework */; };
+		25271BFF1359A86F0032B86C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25271BFD1359A86F0032B86C /* InfoPlist.strings */; };
+		25271C021359A86F0032B86C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C011359A86F0032B86C /* main.m */; };
+		25271C051359A86F0032B86C /* SocialRecommendationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */; };
+		25271C081359A86F0032B86C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271C061359A86F0032B86C /* MainWindow.xib */; };
+		25271C0B1359A86F0032B86C /* SocialRecommendationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */; };
+		25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */; };
+		25271C151359A8700032B86C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF41359A86F0032B86C /* UIKit.framework */; };
+		25271C161359A8700032B86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF61359A86F0032B86C /* Foundation.framework */; };
+		25271C171359A8700032B86C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271BF81359A86F0032B86C /* CoreGraphics.framework */; };
+		25271C1F1359A8700032B86C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25271C1D1359A8700032B86C /* InfoPlist.strings */; };
+		25271C221359A8700032B86C /* SocialRecommendationsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 25271C211359A8700032B86C /* SocialRecommendationsTests.h */; };
+		25271C241359A8700032B86C /* SocialRecommendationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C231359A8700032B86C /* SocialRecommendationsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25271C181359A8700032B86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25271BE71359A86F0032B86C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25271BEF1359A86F0032B86C;
+			remoteInfo = SocialRecommendations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25271BF01359A86F0032B86C /* SocialRecommendations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialRecommendations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25271BF41359A86F0032B86C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25271BF61359A86F0032B86C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25271BF81359A86F0032B86C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25271BFC1359A86F0032B86C /* SocialRecommendations-Info.plist */ = {isa = PBXFileReference; path = "SocialRecommendations-Info.plist"; sourceTree = "<group>"; };
+		25271BFE1359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25271C001359A86F0032B86C /* SocialRecommendations-Prefix.pch */ = {isa = PBXFileReference; path = "SocialRecommendations-Prefix.pch"; sourceTree = "<group>"; };
+		25271C011359A86F0032B86C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */ = {isa = PBXFileReference; path = SocialRecommendationsAppDelegate.h; sourceTree = "<group>"; };
+		25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsAppDelegate.m; sourceTree = "<group>"; };
+		25271C071359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */ = {isa = PBXFileReference; path = SocialRecommendationsViewController.h; sourceTree = "<group>"; };
+		25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsViewController.m; sourceTree = "<group>"; };
+		25271C0D1359A86F0032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SocialRecommendationsViewController.xib; sourceTree = "<group>"; };
+		25271C141359A8700032B86C /* SocialRecommendationsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialRecommendationsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25271C1C1359A8700032B86C /* SocialRecommendationsTests-Info.plist */ = {isa = PBXFileReference; path = "SocialRecommendationsTests-Info.plist"; sourceTree = "<group>"; };
+		25271C1E1359A8700032B86C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */ = {isa = PBXFileReference; path = "SocialRecommendationsTests-Prefix.pch"; sourceTree = "<group>"; };
+		25271C211359A8700032B86C /* SocialRecommendationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsTests.h; sourceTree = "<group>"; };
+		25271C231359A8700032B86C /* SocialRecommendationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25271BED1359A86F0032B86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271BF51359A86F0032B86C /* UIKit.framework in Frameworks */,
+				25271BF71359A86F0032B86C /* Foundation.framework in Frameworks */,
+				25271BF91359A86F0032B86C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25271C101359A8700032B86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271C151359A8700032B86C /* UIKit.framework in Frameworks */,
+				25271C161359A8700032B86C /* Foundation.framework in Frameworks */,
+				25271C171359A8700032B86C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25271BE51359A86F0032B86C = {
+			isa = PBXGroup;
+			children = (
+				25271BFA1359A86F0032B86C /* SocialRecommendations */,
+				25271C1A1359A8700032B86C /* SocialRecommendationsTests */,
+				25271BF31359A86F0032B86C /* Frameworks */,
+				25271BF11359A86F0032B86C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25271BF11359A86F0032B86C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25271BF01359A86F0032B86C /* SocialRecommendations.app */,
+				25271C141359A8700032B86C /* SocialRecommendationsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25271BF31359A86F0032B86C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25271BF41359A86F0032B86C /* UIKit.framework */,
+				25271BF61359A86F0032B86C /* Foundation.framework */,
+				25271BF81359A86F0032B86C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25271BFA1359A86F0032B86C /* SocialRecommendations */ = {
+			isa = PBXGroup;
+			children = (
+				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
+				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
+				25271C061359A86F0032B86C /* MainWindow.xib */,
+				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
+				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
+				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+				25271BFB1359A86F0032B86C /* Supporting Files */,
+			);
+			path = SocialRecommendations;
+			sourceTree = "<group>";
+		};
+		25271BFB1359A86F0032B86C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25271BFC1359A86F0032B86C /* SocialRecommendations-Info.plist */,
+				25271BFD1359A86F0032B86C /* InfoPlist.strings */,
+				25271C001359A86F0032B86C /* SocialRecommendations-Prefix.pch */,
+				25271C011359A86F0032B86C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25271C1A1359A8700032B86C /* SocialRecommendationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				25271C211359A8700032B86C /* SocialRecommendationsTests.h */,
+				25271C231359A8700032B86C /* SocialRecommendationsTests.m */,
+				25271C1B1359A8700032B86C /* Supporting Files */,
+			);
+			path = SocialRecommendationsTests;
+			sourceTree = "<group>";
+		};
+		25271C1B1359A8700032B86C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25271C1C1359A8700032B86C /* SocialRecommendationsTests-Info.plist */,
+				25271C1D1359A8700032B86C /* InfoPlist.strings */,
+				25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25271BEF1359A86F0032B86C /* SocialRecommendations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25271C271359A8700032B86C /* Build configuration list for PBXNativeTarget "SocialRecommendations" */;
+			buildPhases = (
+				25271BEC1359A86F0032B86C /* Sources */,
+				25271BED1359A86F0032B86C /* Frameworks */,
+				25271BEE1359A86F0032B86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialRecommendations;
+			productName = SocialRecommendations;
+			productReference = 25271BF01359A86F0032B86C /* SocialRecommendations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25271C131359A8700032B86C /* SocialRecommendationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25271C2A1359A8700032B86C /* Build configuration list for PBXNativeTarget "SocialRecommendationsTests" */;
+			buildPhases = (
+				25271C0F1359A8700032B86C /* Sources */,
+				25271C101359A8700032B86C /* Frameworks */,
+				25271C111359A8700032B86C /* Resources */,
+				25271C121359A8700032B86C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25271C191359A8700032B86C /* PBXTargetDependency */,
+			);
+			name = SocialRecommendationsTests;
+			productName = SocialRecommendationsTests;
+			productReference = 25271C141359A8700032B86C /* SocialRecommendationsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25271BE71359A86F0032B86C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 25271BEA1359A86F0032B86C /* Build configuration list for PBXProject "SocialRecommendations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25271BE51359A86F0032B86C;
+			productRefGroup = 25271BF11359A86F0032B86C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25271BEF1359A86F0032B86C /* SocialRecommendations */,
+				25271C131359A8700032B86C /* SocialRecommendationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25271BEE1359A86F0032B86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271BFF1359A86F0032B86C /* InfoPlist.strings in Resources */,
+				25271C081359A86F0032B86C /* MainWindow.xib in Resources */,
+				25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25271C111359A8700032B86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271C1F1359A8700032B86C /* InfoPlist.strings in Resources */,
+				25271C221359A8700032B86C /* SocialRecommendationsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25271C121359A8700032B86C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25271BEC1359A86F0032B86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271C021359A86F0032B86C /* main.m in Sources */,
+				25271C051359A86F0032B86C /* SocialRecommendationsAppDelegate.m in Sources */,
+				25271C0B1359A86F0032B86C /* SocialRecommendationsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25271C0F1359A8700032B86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25271C241359A8700032B86C /* SocialRecommendationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25271C191359A8700032B86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25271BEF1359A86F0032B86C /* SocialRecommendations */;
+			targetProxy = 25271C181359A8700032B86C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25271BFD1359A86F0032B86C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25271BFE1359A86F0032B86C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25271C061359A86F0032B86C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25271C071359A86F0032B86C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25271C0D1359A86F0032B86C /* en */,
+			);
+			name = SocialRecommendationsViewController.xib;
+			sourceTree = "<group>";
+		};
+		25271C1D1359A8700032B86C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25271C1E1359A8700032B86C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25271C251359A8700032B86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25271C261359A8700032B86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		25271C281359A8700032B86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
+				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25271C291359A8700032B86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialRecommendations/SocialRecommendations-Prefix.pch";
+				INFOPLIST_FILE = "SocialRecommendations/SocialRecommendations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		25271C2B1359A8700032B86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialRecommendations.app/SocialRecommendations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialRecommendationsTests/SocialRecommendationsTests-Prefix.pch";
+				INFOPLIST_FILE = "SocialRecommendationsTests/SocialRecommendationsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		25271C2C1359A8700032B86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialRecommendations.app/SocialRecommendations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialRecommendationsTests/SocialRecommendationsTests-Prefix.pch";
+				INFOPLIST_FILE = "SocialRecommendationsTests/SocialRecommendationsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25271BEA1359A86F0032B86C /* Build configuration list for PBXProject "SocialRecommendations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25271C251359A8700032B86C /* Debug */,
+				25271C261359A8700032B86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25271C271359A8700032B86C /* Build configuration list for PBXNativeTarget "SocialRecommendations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25271C281359A8700032B86C /* Debug */,
+				25271C291359A8700032B86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25271C2A1359A8700032B86C /* Build configuration list for PBXNativeTarget "SocialRecommendationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25271C2B1359A8700032B86C /* Debug */,
+				25271C2C1359A8700032B86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25271BE71359A86F0032B86C /* Project object */;
+}
