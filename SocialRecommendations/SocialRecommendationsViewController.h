@@ -13,9 +13,10 @@
 <UITableViewDelegate, UITableViewDataSource> {
 
     Brain *brain;
-    NSArray *colorNames;
+    NSMutableArray *recommendationTitles;
 }
-@property (nonatomic, retain) NSArray *colorNames;
+
+@property (nonatomic, retain) NSMutableArray *recommendationTitles;
 @property (nonatomic, retain) Brain *brain;
 
 @end

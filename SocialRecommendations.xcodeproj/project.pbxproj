@@ -28,6 +28,7 @@
 		25271C9D1359BDEA0032B86C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271C9C1359BDEA0032B86C /* libz.dylib */; };
 		25271CEA1359DF870032B86C /* CustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CE81359DF860032B86C /* CustomPicker.m */; };
 		25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271CE91359DF860032B86C /* CustomPicker.xib */; };
+		25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CF51359E8EF0032B86C /* RecommendedItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		25271CE71359DF850032B86C /* CustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPicker.h; sourceTree = "<group>"; };
 		25271CE81359DF860032B86C /* CustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPicker.m; sourceTree = "<group>"; };
 		25271CE91359DF860032B86C /* CustomPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
+		25271CF41359E8EE0032B86C /* RecommendedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedItem.h; sourceTree = "<group>"; };
+		25271CF51359E8EF0032B86C /* RecommendedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 		25271BFA1359A86F0032B86C /* SocialRecommendations */ = {
 			isa = PBXGroup;
 			children = (
+				25271CF41359E8EE0032B86C /* RecommendedItem.h */,
+				25271CF51359E8EF0032B86C /* RecommendedItem.m */,
 				25271C4D1359B0C60032B86C /* Brain */,
 				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
@@ -319,6 +324,7 @@
 				25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */,
 				25271C581359B0F00032B86C /* TBXML.m in Sources */,
 				25271CEA1359DF870032B86C /* CustomPicker.m in Sources */,
+				25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

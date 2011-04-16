@@ -7,11 +7,13 @@
 //
 
 #import "SocialRecommendationsViewController.h"
+#import "RecommendedItem.h"
 
 @implementation SocialRecommendationsViewController
 
-@synthesize brain;//, datePicker, domainPicker;
+@synthesize recommendationTitles; 
 
+@synthesize brain;
 
 - (Brain *)brain
 {
@@ -22,11 +24,38 @@
 }
 
 
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.recommendationTitles count];
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Configure the cell.
+    NSLog([NSString stringWithFormat:@"%d", [indexPath row]]);
+    NSString *colorString = [[self.recommendationTitles objectAtIndex: [indexPath row]] title];
+    
+    cell.textLabel.text = colorString;
+    
+    NSString *subtitle = [[self.recommendationTitles objectAtIndex: [indexPath row]] description];
+    
+    cell.detailTextLabel.text = subtitle;
+    
+    return cell;
+} 
 
 - (void)dealloc
 {
     [super dealloc];
+    [recommendationTitles release];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,9 +73,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // init pickers with values
-    //domainPicker.dataSource = [[self brain] domainValues];
-    
+    self.recommendationTitles = [[NSMutableArray alloc] initWithCapacity:5];
+    for (int i=0; i<5; i++) {
+        RecommendedItem *anItem = [[RecommendedItem alloc] init];
+        anItem.title = [NSString stringWithFormat: @"Activity %d", i+1];
+        anItem.description = @"some description for this activity";
+        [recommendationTitles addObject:anItem];
+        [anItem release];
+
+    }
     
 }
 
@@ -56,6 +91,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.recommendationTitles = nil;
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
