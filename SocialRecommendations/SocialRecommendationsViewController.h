@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Brain.h"
 
-@interface SocialRecommendationsViewController : UIViewController {
-    Brain *brain;
-    IBOutlet UIPickerView *datePicker, *domainPicker;
-    NSMutableArray *array;
-}
+@interface SocialRecommendationsViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource> {
 
-@property (nonatomic, retain) UIPickerView *datePicker, *domainPicker;
+    Brain *brain;
+    NSArray *colorNames;
+}
+@property (nonatomic, retain) NSArray *colorNames;
 @property (nonatomic, retain) Brain *brain;
 
 @end

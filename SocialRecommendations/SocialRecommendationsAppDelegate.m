@@ -15,9 +15,11 @@
 
 @synthesize window=_window;
 
-@synthesize navigationController;
+@synthesize navigationController,filterButton;
 
-
+-(IBAction)filterButtonPressed:(id)sender {
+    NSLog(@"Filter button pressed");
+}
 /*
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	

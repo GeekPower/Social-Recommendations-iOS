@@ -1,28 +1,24 @@
 //
-//  SocialRecommendationsViewController.m
+//  CustomPicker.m
 //  SocialRecommendations
 //
 //  Created by Luiza Cicone on 4/16/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "SocialRecommendationsViewController.h"
-
-@implementation SocialRecommendationsViewController
-
-@synthesize brain;//, datePicker, domainPicker;
+#import "CustomPicker.h"
 
 
-- (Brain *)brain
+@implementation CustomPicker
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-	if (!brain) {
-		brain = [[Brain alloc] init];
-	}
-	return brain;
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
 }
-
-
-
 
 - (void)dealloc
 {
@@ -39,17 +35,11 @@
 
 #pragma mark - View lifecycle
 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // init pickers with values
-    //domainPicker.dataSource = [[self brain] domainValues];
-    
-    
+    // Do any additional setup after loading the view from its nib.
 }
-
 
 - (void)viewDidUnload
 {

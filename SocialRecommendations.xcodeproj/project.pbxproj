@@ -26,6 +26,8 @@
 		25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C541359B0F00032B86C /* NSDataAdditions.m */; };
 		25271C581359B0F00032B86C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C561359B0F00032B86C /* TBXML.m */; };
 		25271C9D1359BDEA0032B86C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271C9C1359BDEA0032B86C /* libz.dylib */; };
+		25271CEA1359DF870032B86C /* CustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CE81359DF860032B86C /* CustomPicker.m */; };
+		25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271CE91359DF860032B86C /* CustomPicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		25271C551359B0F00032B86C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		25271C561359B0F00032B86C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		25271C9C1359BDEA0032B86C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		25271CE71359DF850032B86C /* CustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPicker.h; sourceTree = "<group>"; };
+		25271CE81359DF860032B86C /* CustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPicker.m; sourceTree = "<group>"; };
+		25271CE91359DF860032B86C /* CustomPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +101,6 @@
 		25271BE51359A86F0032B86C = {
 			isa = PBXGroup;
 			children = (
-				25271C9C1359BDEA0032B86C /* libz.dylib */,
 				25271BFA1359A86F0032B86C /* SocialRecommendations */,
 				25271C1A1359A8700032B86C /* SocialRecommendationsTests */,
 				25271BF31359A86F0032B86C /* Frameworks */,
@@ -116,6 +120,7 @@
 		25271BF31359A86F0032B86C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25271C9C1359BDEA0032B86C /* libz.dylib */,
 				25271BF41359A86F0032B86C /* UIKit.framework */,
 				25271BF61359A86F0032B86C /* Foundation.framework */,
 				25271BF81359A86F0032B86C /* CoreGraphics.framework */,
@@ -131,6 +136,8 @@
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
 				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
 				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
+				25271CE71359DF850032B86C /* CustomPicker.h */,
+				25271CE81359DF860032B86C /* CustomPicker.m */,
 				25271C9E1359C4C00032B86C /* xibs */,
 				25271BFB1359A86F0032B86C /* Supporting Files */,
 			);
@@ -194,6 +201,7 @@
 			children = (
 				25271C061359A86F0032B86C /* MainWindow.xib */,
 				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+				25271CE91359DF860032B86C /* CustomPicker.xib */,
 			);
 			name = xibs;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				25271BFF1359A86F0032B86C /* InfoPlist.strings in Resources */,
 				25271C081359A86F0032B86C /* MainWindow.xib in Resources */,
 				25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */,
+				25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +318,7 @@
 				25271C521359B0E40032B86C /* Brain.m in Sources */,
 				25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */,
 				25271C581359B0F00032B86C /* TBXML.m in Sources */,
+				25271CEA1359DF870032B86C /* CustomPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
