@@ -31,8 +31,13 @@
     [[self viewController] buttonPressed:sender]; 
     [[[self viewController] dp] setHidden:YES];
 }
+<<<<<<< HEAD
 -(IBAction)connectButtonPressed:(id)sender {
     [[self navigationController] pushViewController:facebookHandler animated:YES];   
+=======
+-(IBAction)cancelButtonPressed:(id)sender {
+    NSLog(@"Cancel button pressed");    
+>>>>>>> 2a7a97f56f4e19794650947fbde7b9a45374c7ff
 }
 
 /*
