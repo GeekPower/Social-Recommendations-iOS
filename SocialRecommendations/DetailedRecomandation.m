@@ -8,7 +8,6 @@
 
 #import "DetailedRecomandation.h"
 
-
 @implementation DetailedRecomandation
 
 
@@ -52,10 +51,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog([NSString stringWithFormat:@"index: %d", [[self dataController] selectedItemIndex]]);
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://google.com"]]];
+    //URL Requst Object
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[[[[self dataController] recommendedItems] objectAtIndex:[[self dataController]selectedItemIndex]]link]];
+    //Load the request in the UIWebView.
+    [webView loadRequest:requestObj];
     linkLabel.text = [[[[self dataController] recommendedItems ] objectAtIndex:[[self dataController] selectedItemIndex]] title];
-    linkLabel.text=[NSString stringWithFormat:@"%d", [[self dataController] selectedItemIndex]];
 }
 
 - (void)viewDidUnload

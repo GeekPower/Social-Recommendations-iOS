@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DataController.h"
+#import "RecommendedItem.h"
 
 
 @interface DetailedRecomandation : UIViewController {
