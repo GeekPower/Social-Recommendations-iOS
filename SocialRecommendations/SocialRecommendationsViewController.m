@@ -72,7 +72,7 @@
 (NSIndexPath *)indexPath {
    
     [[self dataController] setSelectedItemIndex:indexPath.row];
-     NSLog([NSString stringWithFormat:@"%d",[[self dataController]selectedItemIndex]]);
+     //NSLog([NSString stringWithFormat:@"%d",[[self dataController]selectedItemIndex]]);
     [[self navigationController] pushViewController:detailsHandler animated:YES];
    // NSLog([NSString stringWithFormat:@"%d", detailsHandler]);
    // NSLog([NSString stringWithFormat:@"%d", indexPath.row]);

@@ -26,13 +26,16 @@
 		25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C541359B0F00032B86C /* NSDataAdditions.m */; };
 		25271C581359B0F00032B86C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271C561359B0F00032B86C /* TBXML.m */; };
 		25271C9D1359BDEA0032B86C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25271C9C1359BDEA0032B86C /* libz.dylib */; };
-		25271CEA1359DF870032B86C /* CustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CE81359DF860032B86C /* CustomPicker.m */; };
-		25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271CE91359DF860032B86C /* CustomPicker.xib */; };
 		25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CF51359E8EF0032B86C /* RecommendedItem.m */; };
 		25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CFE1359F0CA0032B86C /* CustomCell.m */; };
 		25271D011359F1600032B86C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271D001359F1600032B86C /* CustomCell.xib */; };
 		2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */; };
 		2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */; };
+		258D697F135AED88006E141B /* FacebookConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 258D697D135AED88006E141B /* FacebookConnect.m */; };
+		258D6980135AED88006E141B /* FacebookConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258D697E135AED88006E141B /* FacebookConnect.xib */; };
+		258D698D135AFADC006E141B /* DoHttpPostWithCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 258D698C135AFADC006E141B /* DoHttpPostWithCookie.m */; };
+		258D6991135AFBF7006E141B /* HttpWithObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258D698F135AFBF7006E141B /* HttpWithObjectiveCViewController.m */; };
+		258D6992135AFBF7006E141B /* HttpWithObjectiveCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258D6990135AFBF7006E141B /* HttpWithObjectiveCViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +76,6 @@
 		25271C551359B0F00032B86C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		25271C561359B0F00032B86C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		25271C9C1359BDEA0032B86C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		25271CE71359DF850032B86C /* CustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPicker.h; sourceTree = "<group>"; };
-		25271CE81359DF860032B86C /* CustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPicker.m; sourceTree = "<group>"; };
-		25271CE91359DF860032B86C /* CustomPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
 		25271CF41359E8EE0032B86C /* RecommendedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedItem.h; sourceTree = "<group>"; };
 		25271CF51359E8EF0032B86C /* RecommendedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedItem.m; sourceTree = "<group>"; };
 		25271CFD1359F0C90032B86C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
@@ -84,6 +84,14 @@
 		2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedRecomandation.h; sourceTree = "<group>"; };
 		2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedRecomandation.m; sourceTree = "<group>"; };
 		2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedRecomandation.xib; sourceTree = "<group>"; };
+		258D697C135AED87006E141B /* FacebookConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookConnect.h; sourceTree = "<group>"; };
+		258D697D135AED88006E141B /* FacebookConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookConnect.m; sourceTree = "<group>"; };
+		258D697E135AED88006E141B /* FacebookConnect.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookConnect.xib; sourceTree = "<group>"; };
+		258D698B135AFADC006E141B /* DoHttpPostWithCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoHttpPostWithCookie.h; sourceTree = "<group>"; };
+		258D698C135AFADC006E141B /* DoHttpPostWithCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoHttpPostWithCookie.m; sourceTree = "<group>"; };
+		258D698E135AFBF7006E141B /* HttpWithObjectiveCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpWithObjectiveCViewController.h; sourceTree = "<group>"; };
+		258D698F135AFBF7006E141B /* HttpWithObjectiveCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpWithObjectiveCViewController.m; sourceTree = "<group>"; };
+		258D6990135AFBF7006E141B /* HttpWithObjectiveCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpWithObjectiveCViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,16 +155,12 @@
 		25271BFA1359A86F0032B86C /* SocialRecommendations */ = {
 			isa = PBXGroup;
 			children = (
-				25271C4D1359B0C60032B86C /* Data Controller */,
 				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
-				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
-				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
-				2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */,
-				2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */,
-				25271CE71359DF850032B86C /* CustomPicker.h */,
-				25271CE81359DF860032B86C /* CustomPicker.m */,
-				25271C9E1359C4C00032B86C /* xibs */,
+				25271C061359A86F0032B86C /* MainWindow.xib */,
+				258D6982135AEDF8006E141B /* MainViews */,
+				258D6981135AEDB3006E141B /* FbConnect */,
+				25271C4D1359B0C60032B86C /* Data Controller */,
 				25271BFB1359A86F0032B86C /* Supporting Files */,
 			);
 			path = SocialRecommendations;
@@ -216,15 +220,32 @@
 			name = TBXML;
 			sourceTree = "<group>";
 		};
-		25271C9E1359C4C00032B86C /* xibs */ = {
+		258D6981135AEDB3006E141B /* FbConnect */ = {
 			isa = PBXGroup;
 			children = (
-				25271C061359A86F0032B86C /* MainWindow.xib */,
-				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
-				2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */,
-				25271CE91359DF860032B86C /* CustomPicker.xib */,
+				258D698E135AFBF7006E141B /* HttpWithObjectiveCViewController.h */,
+				258D698F135AFBF7006E141B /* HttpWithObjectiveCViewController.m */,
+				258D6990135AFBF7006E141B /* HttpWithObjectiveCViewController.xib */,
+				258D698B135AFADC006E141B /* DoHttpPostWithCookie.h */,
+				258D698C135AFADC006E141B /* DoHttpPostWithCookie.m */,
+				258D697C135AED87006E141B /* FacebookConnect.h */,
+				258D697D135AED88006E141B /* FacebookConnect.m */,
+				258D697E135AED88006E141B /* FacebookConnect.xib */,
 			);
-			name = xibs;
+			name = FbConnect;
+			sourceTree = "<group>";
+		};
+		258D6982135AEDF8006E141B /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
+				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
+				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+				2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */,
+				2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */,
+				2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */,
+			);
+			name = MainViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +318,10 @@
 				25271BFF1359A86F0032B86C /* InfoPlist.strings in Resources */,
 				25271C081359A86F0032B86C /* MainWindow.xib in Resources */,
 				25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */,
-				25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */,
 				25271D011359F1600032B86C /* CustomCell.xib in Resources */,
 				2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */,
+				258D6980135AED88006E141B /* FacebookConnect.xib in Resources */,
+				258D6992135AFBF7006E141B /* HttpWithObjectiveCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +363,12 @@
 				25271C521359B0E40032B86C /* DataController.m in Sources */,
 				25271C571359B0F00032B86C /* NSDataAdditions.m in Sources */,
 				25271C581359B0F00032B86C /* TBXML.m in Sources */,
-				25271CEA1359DF870032B86C /* CustomPicker.m in Sources */,
 				25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */,
 				25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */,
 				2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */,
+				258D697F135AED88006E141B /* FacebookConnect.m in Sources */,
+				258D698D135AFADC006E141B /* DoHttpPostWithCookie.m in Sources */,
+				258D6991135AFBF7006E141B /* HttpWithObjectiveCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

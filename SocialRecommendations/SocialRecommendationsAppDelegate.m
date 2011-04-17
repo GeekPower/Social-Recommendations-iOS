@@ -12,10 +12,9 @@
 
 @implementation SocialRecommendationsAppDelegate
 
-
 @synthesize window=_window;
 
-@synthesize navigationController,filterButton, viewController;
+@synthesize navigationController, filterButton, viewController, facebookHandler;
 
 - (SocialRecommendationsViewController *)viewController
 {
@@ -32,8 +31,8 @@
     [[self viewController] buttonPressed:sender]; 
     [[[self viewController] dp] setHidden:YES];
 }
--(IBAction)cancelButtonPressed:(id)sender {
-    NSLog(@"Filter button pressed");    
+-(IBAction)connectButtonPressed:(id)sender {
+    [[self navigationController] pushViewController:facebookHandler animated:YES];   
 }
 
 /*
