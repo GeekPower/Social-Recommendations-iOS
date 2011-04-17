@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Brain : NSObject {
-    NSMutableArray *dateValues, *domainValues;
+@interface DataController : NSObject {
+    NSMutableArray *dateSortingCriteria, *recommendationCategories;
 }
-@property (nonatomic, retain) NSMutableArray *dateValues, *domainValues;
+@property (nonatomic, retain) NSMutableArray *dateSortingCriteria, *recommendationCategories;
 
 -(void)initValues;
 

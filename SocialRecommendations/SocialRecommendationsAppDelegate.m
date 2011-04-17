@@ -15,11 +15,27 @@
 
 @synthesize window=_window;
 
-@synthesize navigationController,filterButton;
+@synthesize navigationController,filterButton, viewController;
+
+- (SocialRecommendationsViewController *)viewController
+{
+	if (!viewController) {
+		viewController = [[SocialRecommendationsViewController alloc] init];
+	}
+	return viewController;
+}
 
 -(IBAction)filterButtonPressed:(id)sender {
     NSLog(@"Filter button pressed");
+   // NSLog([NSString stringWithFormat:@"%d",[[self viewController] dp]]);
+    [filterButton setTitle:@"Done"];
+    [[self viewController] buttonPressed:sender]; 
+    
 }
+-(IBAction)cancelButtonPressed:(id)sender {
+    NSLog(@"Filter button pressed");    
+}
+
 /*
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	

@@ -14,14 +14,20 @@
 
 @synthesize recommendationTitles; 
 
-@synthesize brain;
+@synthesize brain, dp;
 
-- (Brain *)brain
+- (DataController *)brain
 {
 	if (!brain) {
-		brain = [[Brain alloc] init];
+		brain = [[DataController alloc] init];
 	}
 	return brain;
+}
+
+-(IBAction) buttonPressed:(id)sender {
+    NSLog(@"Filter button pressed here");
+    //NSLog([NSString stringWithFormat:@"%d", dp]);
+    //[self.dp setHidden:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -57,10 +63,16 @@
     return cell;
 } 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:
+(NSIndexPath *)indexPath {
+    
+   // NSLog([NSString stringWithFormat:@"%d", indexPath.row]);
+  
+}
+
 - (void)dealloc
 {
-    [super dealloc];
-    [recommendationTitles release];
+    [super dealloc];    [recommendationTitles release];
 
 }
 
@@ -88,6 +100,8 @@
         [anItem release];
 
     }
+    //NSLog([NSString stringWithFormat:@"%d", dp]);
+    [dp retain];
     
 }
 
@@ -98,7 +112,7 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     self.recommendationTitles = nil;
-
+    [dp release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
