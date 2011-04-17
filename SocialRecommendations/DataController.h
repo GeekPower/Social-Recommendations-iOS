@@ -11,9 +11,14 @@
 
 @interface DataController : NSObject {
     NSMutableArray *dateSortingCriteria, *recommendationCategories;
+    NSMutableArray *recommendedItems;
+    int selectedItemIndex;
 }
-@property (nonatomic, retain) NSMutableArray *dateSortingCriteria, *recommendationCategories;
+@property (nonatomic, retain) NSMutableArray *dateSortingCriteria, *recommendationCategories, *recommendedItems;
 
++(id)instance;
+-(void)setSelectedItemIndex:(int)index;
+-(int)selectedItemIndex;
 -(void)initValues;
 
 @end

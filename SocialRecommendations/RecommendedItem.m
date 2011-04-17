@@ -11,6 +11,6 @@
 
 @implementation RecommendedItem
 
-@synthesize title, description;
+@synthesize title, description, link;
 
 @end

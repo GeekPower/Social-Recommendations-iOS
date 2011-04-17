@@ -11,9 +11,11 @@
 
 @interface RecommendedItem : NSObject {
     NSString *title, *description;
+    NSURL *link;
 }
     
 @property (nonatomic, retain) NSString *title, *description;
+@property (nonatomic, retain) NSURL *link;
 
 
 @end

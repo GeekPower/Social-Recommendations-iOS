@@ -31,6 +31,8 @@
 		25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CF51359E8EF0032B86C /* RecommendedItem.m */; };
 		25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25271CFE1359F0CA0032B86C /* CustomCell.m */; };
 		25271D011359F1600032B86C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271D001359F1600032B86C /* CustomCell.xib */; };
+		2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */; };
+		2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,7 @@
 		25271C201359A8700032B86C /* SocialRecommendationsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialRecommendationsTests-Prefix.pch"; sourceTree = "<group>"; };
 		25271C211359A8700032B86C /* SocialRecommendationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialRecommendationsTests.h; sourceTree = "<group>"; };
 		25271C231359A8700032B86C /* SocialRecommendationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialRecommendationsTests.m; sourceTree = "<group>"; };
-		25271C501359B0E40032B86C /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DataController.h; sourceTree = "<group>"; };
+		25271C501359B0E40032B86C /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
 		25271C511359B0E40032B86C /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		25271C531359B0F00032B86C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		25271C541359B0F00032B86C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
@@ -79,6 +81,9 @@
 		25271CFD1359F0C90032B86C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		25271CFE1359F0CA0032B86C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		25271D001359F1600032B86C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedRecomandation.h; sourceTree = "<group>"; };
+		2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedRecomandation.m; sourceTree = "<group>"; };
+		2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedRecomandation.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,13 +147,13 @@
 		25271BFA1359A86F0032B86C /* SocialRecommendations */ = {
 			isa = PBXGroup;
 			children = (
-				25271CF41359E8EE0032B86C /* RecommendedItem.h */,
-				25271CF51359E8EF0032B86C /* RecommendedItem.m */,
-				25271C4D1359B0C60032B86C /* Brain */,
+				25271C4D1359B0C60032B86C /* Data Controller */,
 				25271C031359A86F0032B86C /* SocialRecommendationsAppDelegate.h */,
 				25271C041359A86F0032B86C /* SocialRecommendationsAppDelegate.m */,
 				25271C091359A86F0032B86C /* SocialRecommendationsViewController.h */,
 				25271C0A1359A86F0032B86C /* SocialRecommendationsViewController.m */,
+				2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */,
+				2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */,
 				25271CE71359DF850032B86C /* CustomPicker.h */,
 				25271CE81359DF860032B86C /* CustomPicker.m */,
 				25271C9E1359C4C00032B86C /* xibs */,
@@ -188,14 +193,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		25271C4D1359B0C60032B86C /* Brain */ = {
+		25271C4D1359B0C60032B86C /* Data Controller */ = {
 			isa = PBXGroup;
 			children = (
+				25271CF41359E8EE0032B86C /* RecommendedItem.h */,
+				25271CF51359E8EF0032B86C /* RecommendedItem.m */,
 				25271C4F1359B0D00032B86C /* TBXML */,
 				25271C501359B0E40032B86C /* DataController.h */,
 				25271C511359B0E40032B86C /* DataController.m */,
 			);
-			name = Brain;
+			name = "Data Controller";
 			sourceTree = "<group>";
 		};
 		25271C4F1359B0D00032B86C /* TBXML */ = {
@@ -214,6 +221,7 @@
 			children = (
 				25271C061359A86F0032B86C /* MainWindow.xib */,
 				25271C0C1359A86F0032B86C /* SocialRecommendationsViewController.xib */,
+				2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */,
 				25271CE91359DF860032B86C /* CustomPicker.xib */,
 			);
 			name = xibs;
@@ -291,6 +299,7 @@
 				25271C0E1359A86F0032B86C /* SocialRecommendationsViewController.xib in Resources */,
 				25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */,
 				25271D011359F1600032B86C /* CustomCell.xib in Resources */,
+				2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +344,7 @@
 				25271CEA1359DF870032B86C /* CustomPicker.m in Sources */,
 				25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */,
 				25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */,
+				2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

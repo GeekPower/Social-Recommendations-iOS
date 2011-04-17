@@ -30,7 +30,7 @@
    // NSLog([NSString stringWithFormat:@"%d",[[self viewController] dp]]);
     [filterButton setTitle:@"Done"];
     [[self viewController] buttonPressed:sender]; 
-    
+    [[[self viewController] dp] setHidden:YES];
 }
 -(IBAction)cancelButtonPressed:(id)sender {
     NSLog(@"Filter button pressed");    

@@ -8,19 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "DataController.h"
+@class DetailedRecomandation;
 
 @interface SocialRecommendationsViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource> {
 
-    DataController *brain;
-    NSMutableArray *recommendationTitles;
     IBOutlet UIDatePicker *dp;
+    IBOutlet DetailedRecomandation *detailsHandler;
 }
 
 -(IBAction) buttonPressed:(id)sender;
 
-@property (nonatomic, retain) NSMutableArray *recommendationTitles;
-@property (nonatomic, retain) DataController *brain;
 @property (nonatomic, retain) IBOutlet UIDatePicker *dp;
+@property (nonatomic, retain) IBOutlet DetailedRecomandation *detailsHandler;
+
 
 @end

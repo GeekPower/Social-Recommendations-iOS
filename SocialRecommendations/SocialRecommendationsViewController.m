@@ -9,24 +9,29 @@
 #import "SocialRecommendationsViewController.h"
 #import "RecommendedItem.h"
 #import "CustomCell.h"
+#import "DetailedRecomandation.h"
 
 @implementation SocialRecommendationsViewController
 
-@synthesize recommendationTitles; 
+@synthesize dp, detailsHandler;
 
-@synthesize brain, dp;
+- (DataController *)dataController
+{
+	return [DataController instance]; 
+}
 
+/*
 - (DataController *)brain
 {
 	if (!brain) {
 		brain = [[DataController alloc] init];
 	}
 	return brain;
-}
+}*/
 
 -(IBAction) buttonPressed:(id)sender {
     NSLog(@"Filter button pressed here");
-    //NSLog([NSString stringWithFormat:@"%d", dp]);
+
     //[self.dp setHidden:YES];
 }
 
@@ -37,11 +42,11 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.recommendationTitles count];
+    return [[[self dataController]recommendedItems] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+
     static NSString *CellIdentifier = @"CustomCell";
     
     CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -57,22 +62,26 @@
         }
         
     }
-    cell.titleLabel.text = [[recommendationTitles objectAtIndex:indexPath.row] title];
-    cell.descriptionLabel.text = [[recommendationTitles objectAtIndex:indexPath.row] description];
+    cell.titleLabel.text = [[[[self dataController] recommendedItems] objectAtIndex:indexPath.row] title];
+    cell.descriptionLabel.text = [[[[self dataController] recommendedItems] objectAtIndex:indexPath.row] description];
     
     return cell;
 } 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:
 (NSIndexPath *)indexPath {
-    
+   
+    [[self dataController] setSelectedItemIndex:indexPath.row];
+     NSLog([NSString stringWithFormat:@"%d",[[self dataController]selectedItemIndex]]);
+    [[self navigationController] pushViewController:detailsHandler animated:YES];
+   // NSLog([NSString stringWithFormat:@"%d", detailsHandler]);
    // NSLog([NSString stringWithFormat:@"%d", indexPath.row]);
   
 }
 
 - (void)dealloc
 {
-    [super dealloc];    [recommendationTitles release];
+    [super dealloc];    
 
 }
 
@@ -91,17 +100,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.recommendationTitles = [[NSMutableArray alloc] initWithCapacity:5];
-    for (int i=0; i<5; i++) {
-        RecommendedItem *anItem = [[RecommendedItem alloc] init];
-        anItem.title = [NSString stringWithFormat: @"Activity %d", i+1];
-        anItem.description = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-        [recommendationTitles addObject:anItem];
-        [anItem release];
-
-    }
+    [[self dataController] initValues];
     //NSLog([NSString stringWithFormat:@"%d", dp]);
-    [dp retain];
+   // [dp retain];
     
 }
 
@@ -111,8 +112,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.recommendationTitles = nil;
-    [dp release];
+    //[dp release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
