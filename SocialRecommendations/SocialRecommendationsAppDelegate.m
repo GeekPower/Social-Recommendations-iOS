@@ -33,7 +33,7 @@
     [[[self viewController] dp] setHidden:YES];
 }
 -(IBAction)cancelButtonPressed:(id)sender {
-    NSLog(@"Filter button pressed");    
+    NSLog(@"Cancel button pressed");    
 }
 
 /*

@@ -33,6 +33,8 @@
 		25271D011359F1600032B86C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25271D001359F1600032B86C /* CustomCell.xib */; };
 		2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */; };
 		2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */; };
+		8CCDCFD5135AEB6400C27353 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCDCFD3135AEB6300C27353 /* Filter.m */; };
+		8CCDCFD6135AEB6400C27353 /* Filter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CCDCFD4135AEB6300C27353 /* Filter.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		2585A8E1135A6B9900386C83 /* DetailedRecomandation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedRecomandation.h; sourceTree = "<group>"; };
 		2585A8E2135A6B9900386C83 /* DetailedRecomandation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedRecomandation.m; sourceTree = "<group>"; };
 		2585A8E3135A6B9900386C83 /* DetailedRecomandation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedRecomandation.xib; sourceTree = "<group>"; };
+		8CCDCFD2135AEB6200C27353 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		8CCDCFD3135AEB6300C27353 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		8CCDCFD4135AEB6300C27353 /* Filter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Filter.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,9 @@
 				25271CE81359DF860032B86C /* CustomPicker.m */,
 				25271C9E1359C4C00032B86C /* xibs */,
 				25271BFB1359A86F0032B86C /* Supporting Files */,
+				8CCDCFD2135AEB6200C27353 /* Filter.h */,
+				8CCDCFD3135AEB6300C27353 /* Filter.m */,
+				8CCDCFD4135AEB6300C27353 /* Filter.xib */,
 			);
 			path = SocialRecommendations;
 			sourceTree = "<group>";
@@ -300,6 +308,7 @@
 				25271CEB1359DF870032B86C /* CustomPicker.xib in Resources */,
 				25271D011359F1600032B86C /* CustomCell.xib in Resources */,
 				2585A8E5135A6B9900386C83 /* DetailedRecomandation.xib in Resources */,
+				8CCDCFD6135AEB6400C27353 /* Filter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +354,7 @@
 				25271CF61359E8F00032B86C /* RecommendedItem.m in Sources */,
 				25271CFF1359F0CA0032B86C /* CustomCell.m in Sources */,
 				2585A8E4135A6B9900386C83 /* DetailedRecomandation.m in Sources */,
+				8CCDCFD5135AEB6400C27353 /* Filter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
